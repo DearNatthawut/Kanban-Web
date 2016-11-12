@@ -1,0 +1,339 @@
+<div class="modal-header">
+    <button type="button" class="close" ng-click="close()">&times;</button>
+    <!-- <a ng-href="http://localhost:8000/editCard{{cardData.id}}">
+         <button type="button" class="glyphicon  glyphicon-cog close"></button>
+     </a>-->
+
+    <h4 class="modal-title">Name '{{cardData.name}}'</h4>
+
+
+</div>
+<div class="modal-body">
+
+    <!--                                                             Nav  Menu              -->
+    <ul class="nav nav-tabs" id="tab">
+        <li class="active">
+            <a href="#card-detail" data-toggle="tab">General</a>
+        </li>
+        <li>
+            <a href="#card-date" data-toggle="tab">Date</a>
+        </li>
+
+        <li>
+            <a href="#card-checklist" data-toggle="tab">Checklist</a>
+        </li>
+        <li>
+            <a href="#card-comment" data-toggle="tab">Comment</a>
+        </li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="card-detail"> <!--                                      General-->
+            <div class="box box-primary">
+                <br>
+                <div class="form-horizontal">
+                    <div class="box-body">
+                        <p class="" style="background-color: #00a65a;color: white;font-size: 16px;"
+                           ng-show="saveSuccess == 1">Save Success</p>
+                        <div class="form-group">
+
+                            <label for="Name" class="col-sm-2 control-label">Name</label>
+                            <div class="col-sm-10">
+
+
+                          <div class="alert " style="background-color: whitesmoke;word-wrap: break-word;"
+                          ng-if="DataEdit.boardManager.manager_id != DataEdit.user.id ">
+                          {{cardData.name}}
+                         </div>
+
+                                <input type="text" class="form-control" id="Name" placeholder="Card Name"
+                                       ng-model="cardData.name"
+                                       ng-if=" DataEdit.boardManager.manager_id == DataEdit.user.id "
+                                       required>
+
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="Detail" class="col-sm-2 control-label">Detail</label>
+                            <div class="col-sm-10">
+                               <textarea type="text" class="form-control" id="Detail" placeholder="Detail" rows="5"
+                                         ng-model="cardData.detail"
+                                         ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id "></textarea>
+
+
+                                <div class="alert " style="background-color: whitesmoke;word-wrap: break-word;"
+                                     ng-if=" DataEdit.boardManager.manager_id != DataEdit.user.id ">
+                                    {{cardData.detail}}
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="member" class="col-sm-2 control-label">Responsible</label>
+                            <div class="col-sm-10">
+                                <select id="member" class="form-control" ng-model="cardData.MemberManagement_id"
+                                        ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id ">
+                                    <option ng-repeat="memberData in DataEdit.manager" value="{{memberData.id}}"
+                                            ng-model="cardData.MemberManagement_id"
+                                            ng-selected="cardData.MemberManagement_id == memberData.id">
+                                        {{memberData.member.name}}( {{memberData.member.email}} )
+                                    </option>
+                                </select>
+
+
+                                <div class="alert " style="background-color: whitesmoke;word-wrap: break-word;"
+                                     ng-if=" DataEdit.boardManager.manager_id != DataEdit.user.id ">
+                                    {{cardData.member_card.member.name}} ( {{cardData.member_card.member.email}} )
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="color" class="col-sm-2 control-label">Color</label>
+                            <div class="col-sm-10">
+                                <input type="color" id="color" ng-model="cardData.color"
+                                       class="form-control"
+                                       ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id "
+                                       style="width:30%;"/>
+
+
+                                <div class="alert"
+                                     ng-if=" DataEdit.boardManager.manager_id != DataEdit.user.id "
+                                     style="background-color: {{cardData.color}}"></div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="priority" class="col-sm-2 control-label">Priority</label>
+                            <div class="col-sm-10">
+                                <select id="priority" ng-model="cardData.priority_id" class="form-control"
+                                        ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id ">
+                                    <option ng-repeat="priorityData in DataEdit.priority" value="{{priorityData.id}}"
+                                            ng-model="cardData.priority_id"
+                                            ng-selected="cardData.priority_id == priorityData.id">{{priorityData.name}}
+                                    </option>
+                                </select>
+                                <div class="alert " style="background-color: whitesmoke;word-wrap: break-word;"
+                                     ng-if=" DataEdit.boardManager.manager_id != DataEdit.user.id ">
+                                    {{getPriority(cardData.priority_id)}}
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="form-group" ng-if="cardData.pre_card != null">
+                            <label for="Name" class="col-sm-2 control-label">Pre Card</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control"
+                                       ng-model="cardData.pre_card.name" disabled>
+
+                            </div>
+                        </div>
+
+                        <button ng-click="saveEditCard(cardData)"
+                                ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id "
+                                class="btn btn-success pull-right">SAVE
+                        </button>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-pane fade" id="card-date"> <!--                         -------------------------     Date-->
+
+            <div class="box box-primary">
+
+                <div class="box-header">
+                    <h3 class="box-title">Estimate</h3>
+                </div><!-- /.box-header -->
+
+                <div class="box-body">
+
+                    <p><b>Estimate Start:</b> {{cardData.estimate_start}}</p>
+
+                    <p><b>Estimate End:</b> {{cardData.estimate_end}}</p>
+                    <br>
+                </div>
+                <hr>
+
+                <div class="box-header">
+                    <h3 class="box-title">Actual</h3>
+                </div><!-- /.box-header -->
+
+                <div class="box-body">
+                    <p><b>Start:</b> {{cardData.date_start}}</p>
+
+                    <p><b>End:</b> {{cardData.date_end}}</p>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="tab-pane fade" id="card-checklist">
+            <!--                                                 Checklist-->
+
+            <div class="box box-primary">
+                <div class="box-header">
+                    <i class="ion ion-clipboard"></i>
+                    <h3 class="box-title">Check List</h3>
+
+                </div><!-- /.box-header -->
+                <div class="box-body">
+
+
+                    <ul class="todo-list">
+                        <li ng-repeat="checklist in cardData.checklists"> <!-- loop show all Checklist -->
+
+                            <input type='checkbox' ng-model="checklist.status" ng-true-value="1" ng-false-value="0"
+                                   ng-click="changeCheckStatus(checklist)"
+                                   ng-if="DataEdit.user.id == cardData.member_card.User_id
+                                   || DataEdit.boardManager.manager_id == DataEdit.user.id ">
+
+
+                            <a href="#" ng-if="DataEdit.user.id == cardData.member_card.User_id
+                            || DataEdit.boardManager.manager_id == DataEdit.user.id "
+                               editable-text="checklist.name" onaftersave="updateChecklist(checklist)">{{checklist.name}}</a>
+
+                            <span ng-if="DataEdit.user.id != cardData.member_card.User_id
+                            && DataEdit.boardManager.manager_id != DataEdit.user.id ">{{checklist.name}}</span>
+
+                            <div class="tools">
+
+                                <i class="fa fa-trash-o"
+                                   ng-click="removeChecklist(cardData.id,checklist.id)"
+                                   ng-if="DataEdit.user.id == cardData.member_card.User_id
+                                   || DataEdit.boardManager.manager_id == DataEdit.user.id ">
+                                </i>
+
+                            </div>
+
+                        </li>
+
+                    </ul>
+                </div><!-- /.box-body -->
+
+                <div class="box-footer clearfix no-border">
+
+                    <form>
+                        <div class="input-group" ng-if="DataEdit.user.id == cardData.member_card.User_id
+                        || DataEdit.boardManager.manager_id == DataEdit.user.id ">
+
+                            <input class="form-control" placeholder="Checklist name" ng-model="newChecklist">
+
+                            <div class="input-group-btn">
+                                <button class="btn btn-success" ng-click="addChecklist(newChecklist,cardData.id)">
+                                    <i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div><!-- /.box -->
+        </div>
+
+        <div class="tab-pane fade" id="card-comment"> <!--                                                 Comment-->
+
+
+            <!-- Chat box -->
+            <div class="box box-primary">
+                <div class="box-header">
+                    <i class="fa fa-comments-o"></i>
+                    <h3 class="box-title">Comment</h3>
+
+                </div>
+                <div class="box-body chat" id="chat-box" style=" overflow-y: scroll;height: 300px">
+                    <!-- chat item -->
+                    <div  ng-repeat="comment in cardData.comments | orderBy:'-id'"
+                    ng-model="color = comment.member_comment.id == DataEdit.boardManager.manager_id ? 'Aquamarine ' : 'AliceBlue'">
+
+                      <div  class="item" ng-style="{'background-color':color}" >
+
+                        <img>
+                        <p class="message">
+                        <div class="name">
+                            <small class="text-muted pull-right"><i class="fa fa-clock-o"></i>
+                                {{comment.created_at}}
+
+                                <i class="glyphicon glyphicon-remove"
+                                style="color:red"
+                                   ng-click="removeComment(comment.id,cardData.id)"
+                                   ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id">
+                                </i>
+
+                            </small>
+                            {{comment.member_comment.name}}
+                        </div>
+
+
+                         <!-- PM -->
+                        <a href="#" editable-text="comment.detail" onaftersave="updateComment(comment)"
+                           ng-if="comment.edit_status == 0
+                           && DataEdit.boardManager.manager_id == DataEdit.user.id"
+                           style="word-wrap: break-word;">{{comment.detail}}</a>
+                        <!-- Own  -->
+                        <span ng-if="comment.edit_status ==  0
+                        && DataEdit.boardManager.manager_id != DataEdit.user.id
+                        && DataEdit.user.id == comment.member_comment.id"
+                              editable-text="comment.detail"
+                              style="word-wrap: break-word;">{{comment.detail}}</span>
+                         <!-- member -->
+                         <span ng-if="comment.edit_status ==  0
+                          && DataEdit.boardManager.manager_id != DataEdit.user.id
+                          &&DataEdit.user.id != comment.member_comment.id"
+                               style="word-wrap: break-word;">{{comment.detail}}</span>
+                         <!-- edit -->
+                        <span ng-if="comment.edit_status == 1"
+                              style="word-wrap: break-word;">{{comment.detail}}</span>
+                        </p>
+
+
+                        </div>
+
+                    </div><!-- /.item -->
+
+                </div>
+
+                <div class="box-footer clearfix no-border">
+
+                    <form>
+                        <div class="input-group">
+                            <input class="form-control" placeholder="Post Comment" ng-model="newComment">
+                            <div class="input-group-btn">
+                                <button class="btn btn-success" ng-click="addComment(newComment,cardData.id)">
+                                    <i class="fa fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.box (chat box) -->
+
+        </div>
+
+    </div>
+</div>
+<div class="modal-footer">
+
+
+</div>
+</div>
+
+<script>
+
+    $(document).ready(function () {
+        $("#tab").click(function () {
+            $(this).tab('show');
+        });
+        $('#xxx').daterangepicker({format: 'YYYY/MM/DD'});
+    });
+
+</script>

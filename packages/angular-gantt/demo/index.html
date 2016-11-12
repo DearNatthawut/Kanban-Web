@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>Angular Gantt </title>
+    <meta name="description" content="Gantt chart component for AngularJS">
+    <meta name="viewport" content="width=device-width">
+    <link rel="canonical" href="https://www.angular-gantt.com/">
+    <meta property="og:description" content="Gantt chart component for AngularJS" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.angular-gantt.com/demo/" />
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body ng-app="angularGanttDemoApp" ng-strict-di>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div ng-controller="MainCtrl">
+
+    <div class="container-content" ng-show="false">
+        <div class="container-fluid">
+            <div class="row top-buffer">
+                <div class="col-md-12">
+                    <i class="fa fa-cog fa-spin"></i> Loading angular-gantt demo ...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-content" ng-cloak="true">
+            <div class="row top-buffer">
+                <div class="col-md-12">
+                    <div class="panel-group" bs-collapse>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a href="" bs-collapse-toggle>Gantt</a>
+                                </h4>
+                            </div>
+                            <div class="panel-collapse" bs-collapse-target>
+                                <div class="panel-body">
+                                    <div gantt
+                                         data="data"
+                                         timespans="timespans"
+                                         show-side="options.labelsEnabled"
+                                         daily="options.daily"
+                                         filter-task="{'name': options.filterTask}"
+                                         filter-row="{'name': options.filterRow}"
+                                         sort-mode="options.sortMode"
+                                         view-scale="options.scale"
+                                         column-width="getColumnWidth(options.width, options.scale, options.zoom)"
+                                         auto-expand="options.autoExpand"
+                                         task-out-of-range="options.taskOutOfRange"
+                                         from-date = "options.fromDate"
+                                         to-date = "options.toDate"
+                                         allow-side-resizing = "options.allowSideResizing"
+                                         task-content = "options.taskContentEnabled ? options.taskContent : undefined"
+                                         row-content = "options.rowContentEnabled ? options.rowContent : undefined"
+                                         current-date="options.currentDate"
+                                         current-date-value="options.currentDateValue"
+                                         headers="options.width && options.shortHeaders || options.longHeaders"
+                                         max-height="options.maxHeight && 300 || 0"
+                                         time-frames="options.timeFrames"
+                                         date-frames="options.dateFrames"
+                                         time-frames-working-mode="options.timeFramesWorkingMode"
+                                         time-frames-non-working-mode="options.timeFramesNonWorkingMode"
+                                         time-frames-magnet="options.timeFramesMagnet"
+                                         api="options.api"
+                                         column-magnet="options.columnMagnet">
+                                        <gantt-tree enabled="options.sideMode === 'Tree' || options.sideMode === 'TreeTable'"
+                                                    header-content="options.treeHeaderContent"
+                                                    keep-ancestor-on-filter-row="true">
+                                        </gantt-tree>
+                                        <gantt-table enabled="options.sideMode === 'Table' || options.sideMode === 'TreeTable'"
+                                                     columns="options.sideMode === 'TreeTable' ? options.treeTableColumns : options.columns"
+                                                     headers="options.columnsHeaders"
+                                                     classes="options.columnsClasses"
+                                                     formatters="options.columnsFormatters"
+                                                     contents="options.columnsContents"
+                                                     header-contents="options.columnsHeaderContents">
+                                        </gantt-table>
+                                        <gantt-groups enabled="options.groupDisplayMode === 'group' || options.groupDisplayMode === 'overview' || options.groupDisplayMode === 'promote'" display="options.groupDisplayMode"></gantt-groups>
+                                        <gantt-tooltips></gantt-tooltips>
+                                        <gantt-bounds></gantt-bounds>
+                                        <gantt-progress></gantt-progress>
+                                        <gantt-sortable></gantt-sortable>
+                                        <gantt-movable enabled="!options.readOnly"></gantt-movable>
+                                        <gantt-draw-task
+                                            enabled="options.canDraw"
+                                            move-threshold="2"
+                                            task-factory="options.drawTaskFactory">
+                                        </gantt-draw-task>
+                                        <gantt-overlap></gantt-overlap>
+                                        <gantt-resize-sensor></gantt-resize-sensor>
+                                        <gantt-dependencies
+                                            enabled="options.dependencies.enabled"
+                                            conflict-checker="options.dependencies.conflictChecker"
+                                            read-only="options.readOnly">
+                                        </gantt-dependencies>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+<!--[if lt IE 9]>
+<script src="scripts/oldieshim.js"></script>
+<![endif]-->
+
+<script src="scripts/vendor.js"></script>
+
+<script src="scripts/scripts.js"></script>
+</body>
+</html>

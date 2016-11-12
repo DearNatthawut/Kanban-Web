@@ -1,0 +1,44 @@
+<div ng-model="kanbanBoard" id="board" ng-controller="KanbanController as self">
+
+
+    <button type="submit" ng-click="self.boardComplete()"
+            ng-show="self.checkComplete == 1
+            &&  self.DataMember.user.id == self.DataMember.board.manager_id
+            && self.DataMember.board.status_complete != 1"
+            class="btn btn-primary">Project Complete ?
+    </button>
+
+    <button type="submit" ng-click="self.boardInComplete()"
+            ng-show="self.DataMember.user.id == self.DataMember.board.manager_id
+            && self.DataMember.board.status_complete == 1"
+            class="btn btn-danger">Project Incomplete ?
+    </button>
+
+    <div id="columns" class="row">
+
+        <div class="col-sm-3 col-xs-3" ng-repeat="column in self.kanbanBoard .columns"
+             data-columnindex="{{$index}}" id="column{{$index}}">
+
+            <div class="column">
+
+                <div class="columnHeader">
+
+                  <span ng-show="column.name == 'Doing' && self.Board.worklimit==0">{{column.name}} ({{column.cards.length}} )</span>
+                  <span ng-show="column.name == 'Doing' && self.Board.worklimit!=0">{{column.name}} ({{column.cards.length}} /  {{self.DataMember.board.worklimit}})</span>
+                  <span ng-show="column.name != 'Doing'">{{column.name}} ({{column.cards.length}})</span>
+                </div>
+
+                <!-- loob show card -->
+                <ul class="cards card-list" as-sortable="self.kanbanSortOptions" ng-model="column.cards">
+                    <li class="card" ng-repeat="card in column.cards" as-sortable-item
+                        ng-include="'/kanban/views/partials/card.html'">
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>

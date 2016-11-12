@@ -1,0 +1,131 @@
+﻿<!-- Item template -->
+
+<!--  Admin-->
+<div as-sortable-item-handle
+     ng-if=" self.DataMember.user.id == self.DataMember.board.manager_id
+      &&  self.DataMember.board.status_complete != 1">
+
+    <div class="row">
+        <div class="col-sm-10">
+            <!--  Color -->
+            <span class="label" style="background-color: {{card.color}}; border: solid;width:42px">   </span>
+
+            <!-- High Priority -->
+            <span class="glyphicon glyphicon-star card-icon" style="color: gold;"
+                  ng-if="card.priority_id == 2"></span>
+
+            <!-- edit -->
+             <span class="label label-default card-icon" ng-if="card.type_id == 2   ">
+                 <span class="glyphicon glyphicon-edit "></span> {{(card.comments | filter:"(แก้ไข").length }}</span>
+
+            <!-- Time -->
+             <span class="label label-danger card-icon"
+                   ng-if="self.isOvertime(card.estimate_end,self.date,card.date_end)">
+                 <span class="glyphicon glyphicon-time"></span> Over time  </span>
+
+            <!--General -->
+            <span class="card-title">{{card.name }}</span>
+
+            <span class="card-title" ng-if="card.pre_card.name != null">Pre Card :  {{card.pre_card.name}} </span>
+
+        </div>
+
+        <div class="col-sm-2">
+            <a data-no-drag class=" removeCard pull-right btn btn-xs" ng-click="self.detailCard(card)">
+                <span class="glyphicon  glyphicon-cog"></span></a>
+        </div>
+
+        <div class="col-sm-2">
+            <a data-no-drag class=" removeCard pull-right btn btn-xs" ng-click="self.removeCard(column, card)"
+               ng-if="self.DataMember.user.id == self.DataMember.board.manager_id">
+                <span class="glyphicon glyphicon-remove"></span></a>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--  manager Card-->
+<div as-sortable-item-handle ng-if="( self.DataMember.user.id == card.member_card.member.id
+     && self.DataMember.user.id != self.DataMember.board.manager_id)
+     && self.DataMember.board.status_complete != 1">
+
+    <div class="row">
+
+        <div class="col-sm-10">
+
+            <!--  Color -->
+            <span class="label" style="background-color: {{card.color}}; border: solid;width:42px">   </span>
+
+
+            <!-- High Priority -->
+            <span class="glyphicon glyphicon-star card-icon" style="color: gold;"
+                  ng-if="card.priority_id == 2"></span>
+
+            <!-- edit -->
+             <span class="label label-default card-icon" ng-if="card.type_id == 2   ">
+                 <span class="glyphicon glyphicon-edit "></span> {{(card.comments | filter:"(แก้ไข").length }}</span>
+
+            <!-- Time -->
+             <span class="label label-danger card-icon" ng-if="self.isOvertime(card.estimate_end,self.date)">
+                 <span class="glyphicon glyphicon-time"></span> Over time  </span>
+
+            <!--General -->
+            <span class="card-title">{{card.name }}</span>
+            <!--<hr ng-if="card.pre_card.name != null">-->
+            <span class="card-title" ng-if="card.pre_card.name != null">Pre Card :  {{card.pre_card.name}} </span>
+
+
+        </div>
+
+        <div class="col-sm-2">
+            <a data-no-drag class=" removeCard pull-right btn btn-xs" ng-click="self.detailCard(card)">
+                <span class="glyphicon  glyphicon-cog"></span></a>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<!--  member -->
+<div ng-if="(self.DataMember.user.id != card.member_card.member.id
+&& self.DataMember.user.id != self.DataMember.board.manager_id)
+ ||  self.DataMember.board.status_complete == 1">
+
+    <div class="row">
+        <div class="col-sm-10">
+
+            <!--  Color -->
+            <span class="label" style="background-color: {{card.color}}; border: solid;width:42px">   </span>
+
+            <!-- High Priority -->
+            <span class="glyphicon glyphicon-star card-icon" style="color: gold;"
+                  ng-if="card.priority_id == 2"></span>
+
+            <!-- edit -->
+             <span class="label label-default card-icon" ng-if="card.type_id == 2   ">
+                 <span class="glyphicon glyphicon-edit "></span> {{(card.comments | filter:"(แก้ไข").length }}</span>
+
+            <!-- Time -->
+             <span class="label label-danger card-icon" ng-if="self.isOvertime(card.estimate_end,self.date)">
+                 <span class="glyphicon glyphicon-time"></span> Over time  </span>
+
+            <!--General -->
+            <span class="card-title">{{card.name }}</span>
+            <!--<hr ng-if="card.pre_card.name != null">-->
+            <span class="card-title" ng-if="card.pre_card.name != null">Pre Card :  {{card.pre_card.name}} </span>
+
+
+        </div>
+        <div class="col-sm-2">
+            <a data-no-drag class=" removeCard pull-right btn btn-xs" ng-click="self.detailCard(card)">
+                <span class="glyphicon  glyphicon-cog"></span></a>
+        </div>
+
+    </div>
+
+
+</div>

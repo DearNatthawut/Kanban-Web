@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9b74d2af-41df-4bba-b0b4-7ba9eeb68fce" name="Default" comment="" />
+    <ignored path="kanban.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="kanban" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="BoardController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BoardController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".env" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.env">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="new-requirement" />
+      </map>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/pages/board/help.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/scriptNG.blade.php" />
+        <option value="$PROJECT_DIR$/app/Models/Comment.php" />
+        <option value="$PROJECT_DIR$/public/js/controllers/MoveBackCardController.js" />
+        <option value="$PROJECT_DIR$/public/js/controllers/MoveCardController.js" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/mainBoard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/boardBin.blade.php" />
+        <option value="$PROJECT_DIR$/public/packages/ng-sortable/styles/board.css" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/aside.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/GanttController.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/header.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/password.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/editname.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/change-email.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/change-emai.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/view-edit.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/boardDone.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/adminside.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/changepassword.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/change-email.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/changename.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/auth/managementAccount.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/contact.blade.php" />
+        <option value="$PROJECT_DIR$/public/packages/jquery.autocomplete/styles.css" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/css.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/layouts/script.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/member/member.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/MemberController.php" />
+        <option value="$PROJECT_DIR$/app/Models/Card.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/card/createCard.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+        <option value="$PROJECT_DIR$/public/views/partials/card.html" />
+        <option value="$PROJECT_DIR$/public/js/controllers/DetailCardController.js" />
+        <option value="$PROJECT_DIR$/resources/views/pages/help.blade.php" />
+        <option value="$PROJECT_DIR$/public/views/partials/afterMoveBack.html" />
+        <option value="$PROJECT_DIR$/public/views/partials/detailCard.html" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/index.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/board.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/gantt/ganttChart.blade.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/CardController.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/createBoard.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/pages/board/edit.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/services/BoardService.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/BoardController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/public/index.php" />
+        <option value="$PROJECT_DIR$/public/js/controllers/KanbanController.js" />
+        <option value="$PROJECT_DIR$/public/views/kanban.html" />
+        <option value="$PROJECT_DIR$/.env" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <gulpfiles>
+      <GulpfileState>
+        <gulpfile-path>$PROJECT_DIR$/gulpfile.js</gulpfile-path>
+      </GulpfileState>
+    </gulpfiles>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1374" />
+    <option name="height" value="732" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>CSS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Host" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kanban" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Host" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\resources\views\pages" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\public\packages\angular-xeditable" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\public\packages" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\public" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\public\app\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\resources\views\auth" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\resources\views\pages" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\resources\views\pages\board" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\public\views\partials" />
+      <recent name="C:\Users\DNOJ\Documents\GitHub\kanban\app\Http\Controllers" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9b74d2af-41df-4bba-b0b4-7ba9eeb68fce" name="Default" comment="" />
+      <created>1459241272652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1459241272652</updated>
+      <workItem from="1459525061554" duration="10200000" />
+      <workItem from="1459619329647" duration="3929000" />
+      <workItem from="1459692848834" duration="1841000" />
+      <workItem from="1459776825548" duration="16845000" />
+      <workItem from="1459831825652" duration="5002000" />
+      <workItem from="1459871637298" duration="1673000" />
+      <workItem from="1459909886327" duration="2137000" />
+      <workItem from="1459956960102" duration="5037000" />
+      <workItem from="1460010192171" duration="7364000" />
+      <workItem from="1460038814943" duration="5498000" />
+      <workItem from="1460129758692" duration="7532000" />
+      <workItem from="1460137438054" duration="4468000" />
+      <workItem from="1460167424537" duration="2603000" />
+      <workItem from="1460605459524" duration="1377000" />
+      <workItem from="1460650609039" duration="6720000" />
+      <workItem from="1460733314632" duration="17195000" />
+      <workItem from="1460820532327" duration="3626000" />
+      <workItem from="1460906260619" duration="9270000" />
+      <workItem from="1460990833336" duration="19051000" />
+      <workItem from="1461042711946" duration="9126000" />
+      <workItem from="1461081498272" duration="3047000" />
+      <workItem from="1461161083958" duration="9677000" />
+      <workItem from="1461246019827" duration="15598000" />
+      <workItem from="1461291033621" duration="8147000" />
+      <workItem from="1461379957160" duration="7515000" />
+      <workItem from="1461418298575" duration="18438000" />
+      <workItem from="1461493373049" duration="22484000" />
+      <workItem from="1461557010339" duration="2509000" />
+      <workItem from="1461597164661" duration="15883000" />
+      <workItem from="1461662188948" duration="19434000" />
+      <workItem from="1461765432348" duration="7672000" />
+      <workItem from="1462088728566" duration="3012000" />
+      <workItem from="1462093343577" duration="1910000" />
+      <workItem from="1462112050173" duration="8226000" />
+      <workItem from="1462202265020" duration="10704000" />
+      <workItem from="1462246234343" duration="3662000" />
+      <workItem from="1462278260932" duration="2770000" />
+      <workItem from="1462282187159" duration="1810000" />
+      <workItem from="1462288342357" duration="268000" />
+      <workItem from="1462544552947" duration="3278000" />
+      <workItem from="1462718011600" duration="14363000" />
+      <workItem from="1462766933282" duration="10691000" />
+      <workItem from="1462809471814" duration="2962000" />
+      <workItem from="1462860947777" duration="6072000" />
+      <workItem from="1463114449427" duration="9292000" />
+      <workItem from="1463130874151" duration="376000" />
+      <workItem from="1463131361500" duration="8982000" />
+      <workItem from="1463254311228" duration="1532000" />
+      <workItem from="1463281422195" duration="1922000" />
+      <workItem from="1463288128966" duration="5667000" />
+      <workItem from="1463326562573" duration="691000" />
+      <workItem from="1465311529949" duration="31241000" />
+      <workItem from="1465400431333" duration="12143000" />
+      <workItem from="1465445201087" duration="11137000" />
+      <workItem from="1465544132759" duration="591000" />
+      <workItem from="1465566629039" duration="19322000" />
+      <workItem from="1465625701167" duration="23717000" />
+      <workItem from="1465709216221" duration="2709000" />
+      <workItem from="1465786681038" duration="2612000" />
+      <workItem from="1465801235092" duration="24169000" />
+      <workItem from="1465834121339" duration="9546000" />
+      <workItem from="1465878787376" duration="7172000" />
+      <workItem from="1466091401226" duration="4362000" />
+      <workItem from="1466136866118" duration="10000" />
+      <workItem from="1466137812283" duration="21727000" />
+      <workItem from="1466676099714" duration="14899000" />
+      <workItem from="1467029312170" duration="5882000" />
+      <workItem from="1467217629363" duration="2254000" />
+      <workItem from="1467265516830" duration="4683000" />
+      <workItem from="1467274095609" duration="1455000" />
+      <workItem from="1467296530786" duration="614000" />
+      <workItem from="1467303510051" duration="667000" />
+      <workItem from="1467305674856" duration="346000" />
+      <workItem from="1467309830769" duration="814000" />
+      <workItem from="1467311927296" duration="1315000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="572475000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19033675" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32232705" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/public/packages/angular-gantt/src/core/ui/size/elementWidthListener.directive.js</url>
+          <line>20</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="17" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Controller.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Requests/Request.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/boardDone.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/register.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/mainBoard.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/help.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/boardBin.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/managementAccount.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/adminside.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/contact.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/aside.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/changepassword.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/change-email.blade.php" />
+    <entry file="file://$USER_HOME$/Desktop/jQuery-Autocomplete-master/scripts/countries.js" />
+    <entry file="file://$USER_HOME$/Desktop/jQuery-Autocomplete-master/scripts/jquery.mockjax.js" />
+    <entry file="file://$PROJECT_DIR$/public/packages/jquery.autocomplete/styles.css" />
+    <entry file="file://$PROJECT_DIR$/public/packages/EasyAutocomplete-1.3.5/easy-autocomplete.themes.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-510">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/css.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/layouts/script.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/changename.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/member/member.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/MemberController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/card/checklist.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/card/general.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/card/createCard.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/help.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/index.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/board.blade.php" />
+    <entry file="file://$PROJECT_DIR$/public/views/partials/detailCard.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5151">
+          <caret line="303" column="27" selection-start-line="303" selection-start-column="27" selection-end-line="303" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/gantt/ganttChart.blade.php" />
+    <entry file="file://$PROJECT_DIR$/app/Models/Card.php" />
+    <entry file="file://$PROJECT_DIR$/app/Models/PreCard.php" />
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/NewCardController.js" />
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/MoveBackCardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="46" column="19" selection-start-line="46" selection-start-column="19" selection-end-line="46" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/partials/afterMoveBack.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/BoardCompleteController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/DetailCardController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1037">
+          <caret line="61" column="34" selection-start-line="61" selection-start-column="34" selection-end-line="61" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/services/BoardService.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1921">
+          <caret line="113" column="29" selection-start-line="113" selection-start-column="29" selection-end-line="113" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/partials/card.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="26" column="69" selection-start-line="26" selection-start-column="65" selection-end-line="26" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/CardController.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/edit.blade.php" />
+    <entry file="file://$PROJECT_DIR$/resources/views/pages/board/createBoard.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/views/kanban.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="26" column="71" selection-start-line="26" selection-start-column="71" selection-end-line="26" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/controllers/KanbanController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="18" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/web.config">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/BoardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="41" column="8" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

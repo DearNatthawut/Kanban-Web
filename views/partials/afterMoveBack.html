@@ -1,0 +1,29 @@
+<div class="modal-header" style="background: #00ca6d">
+
+    <h2 class="modal-title">Alert!!</h2>
+
+
+</div>
+<div class="modal-body">
+
+    <h4>Move Back Successfully</h4>
+    <br>
+    <form>
+
+        <input class="form-control" ng-model="commentData" placeholder="Post Comment" required="required">
+
+
+        <div class="modal-footer">
+            <button class="btn btn-primary pull-right" ng-click="commentMoveBack(commentData)"
+                    ng-show="commentData != null">Move Only Card
+            </button>
+            <button class="btn btn-danger pull-right" ng-click="commentMoveAllBack(commentData)"
+                    ng-show="commentData != null">Move All Cards
+            </button>
+        </div>
+
+    </form>
+
+
+</div>
+
