@@ -85,5 +85,4 @@
 </div>
 
 </body>
-@include('layouts.script')
 </html>

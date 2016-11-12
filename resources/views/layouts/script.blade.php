@@ -7,7 +7,7 @@
  */ ?>
 
 <!-- jQuery -->
-<script src="/kanban/packages/jQuery/jQuery-2.1.4.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <!-- djQueryUI -->
 <script src="/kanban/packages/jQueryUI/jquery-ui.min.js"></script>
 <!-- bootstrap -->
@@ -107,5 +107,3 @@
 
     });
 </script>
-
-
