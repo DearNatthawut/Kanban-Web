@@ -4,11 +4,8 @@
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
         <!-- Sidebar user panel -->
-        <div class="user-panel">
-            <div class="pull-left image">
-                <p>.</p>
-            </div>
-            <div class="pull-left info">
+        <div class="user-panel" style="padding-bottom: 30px;">
+            <div class="pull-left info" style="left: 30px;">
                 <p> {{Auth::user()->name}} </p>
             </div>
         </div>

@@ -4,26 +4,20 @@
         <!-- sidebar: style can be found in sidebar.less -->
         <section class="sidebar">
             <!-- Sidebar user panel -->
-            <div class="user-panel">
-                <div class="pull-left image">
-                    <p>.</p>
-                </div>
-                <div class="pull-left info">
+            <div class="user-panel" style="padding-bottom: 30px;">
+                <div class="pull-left info" style="left: 30px;">
                     <p> {{Auth::user()->name}} </p>
                 </div>
             </div>
-
             <!-- sidebar menu: : style can be found in sidebar.less -->
             <ul class="sidebar-menu">
-                <li class="header"></li>
-
+                <li class="header">MAIN NAVIGATION</li>
                 <li>
                     <a href="/kanban/home">
                         <i class="glyphicon glyphicon-blackboard"></i> <span>List of Boards </span>
                         <small class="label pull-right bg-red"></small>
                     </a>
                 </li>
-
                 <li>
                     <a href="/kanban/board/{{$Board->id}}#/">
                         <i class="glyphicon glyphicon-blackboard"></i> <span>Board</span>
@@ -42,15 +36,12 @@
                         <small class="label pull-right bg-red"></small>
                     </a>
                 </li>
-
-
                 <li>
                     <a href="/kanban/help">
-                        <i class="glyphicon glyphicon-info-sign"></i> <span>Help</span>
+                        <i class="glyphicon glyphicon-info-sign"></i><span>Help</span>
                         <small class="label pull-right bg-red"></small>
                     </a>
                 </li>
-
             </ul>
         </section>
         <!-- /.sidebar -->
