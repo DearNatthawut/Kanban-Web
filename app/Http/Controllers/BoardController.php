@@ -248,13 +248,25 @@ class BoardController extends Controller
       if (!Auth::check()) return redirect("/");
       if (Auth::user()->Level_id == 1) return redirect('/managementAccount');
 
-
         $board = Board::find(session()->get('Board'));
         if (Auth::user()->id != $board->manager_id) return redirect("/");
         $board->status_complete = 0;
         $board->end_date = null;
         $board->save();
+        return redirect('/home');
+    }
 
+    public function boardGetInComplete($id)
+    {
+      if (!Auth::check()) return redirect("/");
+      if (Auth::user()->Level_id == 1) return redirect('/managementAccount');
+
+        $board = Board::find($id);
+        if (Auth::user()->id != $board->manager_id) return redirect("/");
+        $board->status_complete = 0;
+        $board->end_date = null;
+        $board->save();
+        return redirect('/home');
     }
 
 
