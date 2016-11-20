@@ -115,7 +115,7 @@
                                 <th>Name</th>
                                 <th>E-mail</th>
                                 <th>Position</th>
-                                @if(Auth::user()->Level_id == 1)
+                                @if(Auth::user()->id == $Board->manager_id)
                                     <th style="width: 10px"></th>
                                 @endif
 

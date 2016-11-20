@@ -2165,6 +2165,7 @@ a:focus {
  */
 .btn {
   border-radius: 3px;
+  margin-left : 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
   border: 1px solid transparent;
