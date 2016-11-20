@@ -265,7 +265,7 @@
                                 {{comment.created_at}}
 
                                 <i class="glyphicon glyphicon-remove"
-                                style="color:red"
+                                style="color:red;cursor:pointer;"
                                    ng-click="removeComment(comment.id,cardData.id)"
                                    ng-if="DataEdit.boardManager.manager_id == DataEdit.user.id">
                                 </i>
@@ -276,24 +276,24 @@
 
 
                          <!-- PM -->
-                        <a href="#" editable-text="comment.detail" onaftersave="updateComment(comment)"
+                        <a href="#" editable-text="comment.detail"  onaftersave="updateComment(comment)"
                            ng-if="comment.edit_status == 0
                            && DataEdit.boardManager.manager_id == DataEdit.user.id"
-                           style="word-wrap: break-word;">{{comment.detail}}</a>
+                           style="word-wrap: break-word;" e-required>{{comment.detail}}</a>
                         <!-- Own  -->
                         <span ng-if="comment.edit_status ==  0
                         && DataEdit.boardManager.manager_id != DataEdit.user.id
                         && DataEdit.user.id == comment.member_comment.id"
                               editable-text="comment.detail"
-                              style="word-wrap: break-word;">{{comment.detail}}</span>
+                              style="word-wrap: break-word;" e-required>{{comment.detail}}</span>
                          <!-- member -->
                          <span ng-if="comment.edit_status ==  0
                           && DataEdit.boardManager.manager_id != DataEdit.user.id
-                          &&DataEdit.user.id != comment.member_comment.id"
-                               style="word-wrap: break-word;">{{comment.detail}}</span>
+                          && DataEdit.user.id != comment.member_comment.id"
+                               style="word-wrap: break-word;" e-required>{{comment.detail}}</span>
                          <!-- edit -->
                         <span ng-if="comment.edit_status == 1"
-                              style="word-wrap: break-word;">{{comment.detail}}</span>
+                              style="word-wrap: break-word;" e-required>{{comment.detail}}</span>
                         </p>
 
 
@@ -305,11 +305,11 @@
 
                 <div class="box-footer clearfix no-border">
 
-                    <form>
+                    <form ng-submit="addComment(newComment,cardData.id)">
                         <div class="input-group">
-                            <input class="form-control" placeholder="Post Comment" ng-model="newComment">
+                            <input class="form-control" placeholder="Post Comment" ng-model="newComment" required="true">
                             <div class="input-group-btn">
-                                <button class="btn btn-success" ng-click="addComment(newComment,cardData.id)">
+                                <button class="btn btn-success" type="submit">
                                     <i class="fa fa-plus"></i></button>
                             </div>
                         </div>

@@ -23,7 +23,7 @@
                         </h2>
                     </div>
                     <a href="https://www.facebook.com/natthawut.jantapoon"
-                       class="btn btn-block btn-social btn-facebook">
+                       class="btn btn-block btn-social btn-facebook" target="_blank">
                         <i class="fa fa-facebook"></i> Facebook Natthawut Jantapoon
                     </a>
                     <a class="btn btn-block btn-social btn-google">
@@ -33,7 +33,7 @@
 
                     <hr>
                     <a href="https://www.facebook.com/viewwe.best"
-                       class="btn btn-block btn-social btn-facebook">
+                       class="btn btn-block btn-social btn-facebook" target="_blank">
                         <i class="fa fa-facebook"></i> Facebook Suphisit Khaika
                     </a>
                     <a class="btn btn-block btn-social btn-google">

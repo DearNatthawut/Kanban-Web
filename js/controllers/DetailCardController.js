@@ -195,6 +195,7 @@ angular.module('kanban').controller('DetailCardController',
 
         //--------------------------------------------------------------------------------Comment
         $scope.addComment = function (addcomment,cardID) {
+          if (addcomment != "") {
 
             var $addCom = {
                 detail : addcomment
@@ -219,6 +220,9 @@ angular.module('kanban').controller('DetailCardController',
 
                 $scope.newComment = "";
             });
+          }else{
+            return false;
+          }
 
         };
 

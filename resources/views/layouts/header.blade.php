@@ -1,6 +1,6 @@
 @section("header")
 <!DOCTYPE html>
-<html ng-app="kanban"  class="no-js">
+<html ng-app="kanban"  class="no-js" style="background-color: #ecf0f5;">
 
 <head>
 
